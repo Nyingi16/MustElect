@@ -1,0 +1,69 @@
+# MUST Elections System
+
+A decentralized voting system designed for Meru University of Science & Technology (MUST), utilizing Ethereum blockchain technology to ensure transparency, security, and data immutability.
+
+## 1. Overview
+The MUST Elections System provides a secure platform for student elections. By leveraging smart contracts, the system guarantees that every vote is recorded on an immutable ledger, preventing tampering and ensuring the integrity of the democratic process within the university.
+
+## 2. Technical Stack
+- Frontend: Next.js 14, Tailwind CSS, Chart.js
+- Backend: Node.js, Express.js, Sequelize ORM
+- Database: PostgreSQL 15+
+- Blockchain: Solidity, Web3.js, Truffle, Ganache
+- Authentication: JWT, Bcrypt, Email OTP
+
+## 3. Key Features
+- Decentralized Voting: Votes are stored on the blockchain.
+- Role-Based Access: Specific dashboards for Students, Candidates, Commissioners, and the Dean.
+- Candidate Vetting: Multi-stage approval workflow.
+- Real-time Analytics: Live result tracking and statistical visualization.
+- Security: MetaMask integration for cryptographic vote signing.
+
+## 4. System Architecture
+The system utilizes a hybrid architecture:
+- Off-chain: User profiles, application data, and logs are stored in PostgreSQL.
+- On-chain: Election metadata and cast votes are handled by Ethereum Smart Contracts.
+
+
+
+## 5. Installation and Setup
+
+### Prerequisites
+- Node.js (v18.x or higher)
+- PostgreSQL (v15+)
+- Ganache (Local blockchain)
+- MetaMask Browser Extension
+
+### Step-by-Step Setup
+1. Clone the repository:
+   git clone https://github.com/Nyingi16/vehicle_sales_system.git
+
+2. Install dependencies:
+   cd backend && npm install
+   cd ../frontend && npm install
+
+3. Configure environment variables:
+   Create a .env file in the backend directory with your DB_USER, DB_PASSWORD, and JWT_SECRET.
+
+4. Deploy Smart Contracts:
+   truffle migrate --network development
+
+5. Run the application:
+   # Backend
+   cd backend && npm start
+   # Frontend
+   cd frontend && npm run dev
+
+## 6. User Roles
+- Admin: System configuration and user management.
+- Dean: Election management and final candidate approval.
+- Commissioner: Initial vetting and registration verification.
+- Student: Profile management and voting.
+
+## 7. Troubleshooting
+- Handshake Errors: Often caused by network restrictions or proxy settings. If using Git, ensure SSH is configured.
+- MetaMask Sync: If the transaction fails, reset your MetaMask account to clear the transaction nonce history.
+- Port Conflicts: The backend defaults to 3001 and the frontend to 3000. Ensure these ports are available.
+
+## 8. License
+This project is licensed under the MIT License.
