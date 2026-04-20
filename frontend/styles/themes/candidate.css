@@ -1,0 +1,21 @@
+/* styles/themes/candidate.css */
+.candidate-theme {
+  --primary: #10B981;
+  --primary-dark: #065F46;
+  --secondary: #34D399;
+}
+
+.candidate-header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
+
+.candidate-btn {
+  background-color: var(--primary);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.candidate-btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}

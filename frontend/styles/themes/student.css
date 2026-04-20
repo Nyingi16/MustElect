@@ -1,0 +1,10 @@
+/* styles/themes/student.css */
+.student-theme {
+  --primary: #3B82F6;
+  --primary-dark: #1E3A8A;
+  --secondary: #60A5FA;
+}
+
+.student-header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}

@@ -1,0 +1,21 @@
+/* styles/themes/commissioner.css */
+.commissioner-theme {
+  --primary: #F59E0B;
+  --primary-dark: #B45309;
+  --secondary: #FBBF24;
+}
+
+.commissioner-header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
+
+.commissioner-btn {
+  background-color: var(--primary);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.commissioner-btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}

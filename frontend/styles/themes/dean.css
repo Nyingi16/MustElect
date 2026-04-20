@@ -1,0 +1,21 @@
+/* styles/themes/dean.css */
+.dean-theme {
+  --primary: #EF4444;
+  --primary-dark: #991B1B;
+  --secondary: #F87171;
+}
+
+.dean-header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
+
+.dean-btn {
+  background-color: var(--primary);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.dean-btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
